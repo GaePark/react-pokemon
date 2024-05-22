@@ -88,39 +88,43 @@ const DetailPage = () => {
             <div className="  text-lg font-bold">{resultData.koText}</div>
             <div>
               <table className="w-full">
-                <tr className="bg-gray-200 w-full">
-                  <th>타입</th>
-                  <th>키</th>
-                  <th>분류</th>
-                </tr>
-                <tr>
-                  <th>
-                    {resultData.types[0].type.name} <br />
-                    {resultData.types[1] ? resultData.types[1].type.name : ""}
-                  </th>
-                  <th>{resultData.height}0cm</th>
-                  <th>{resultData.koGenera}</th>
-                </tr>
+                <tbody>
+                  <tr className="bg-gray-200 w-full">
+                    <th>타입</th>
+                    <th>키</th>
+                    <th>분류</th>
+                  </tr>
+                  <tr>
+                    <th>
+                      {resultData.types[0].type.name} <br />
+                      {resultData.types[1] ? resultData.types[1].type.name : ""}
+                    </th>
+                    <th>{resultData.height}0cm</th>
+                    <th>{resultData.koGenera}</th>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div>
               <table className="w-full">
-                <tr className=" bg-gray-200">
-                  <th>체력</th>
-                  <th>공격</th>
-                  <th>방어</th>
-                  <th>특공</th>
-                  <th>특방</th>
-                  <th>스피드</th>
-                </tr>
-                <tr>
-                  <th>{resultData.stats[0].base_stat}</th>
-                  <th>{resultData.stats[1].base_stat}</th>
-                  <th>{resultData.stats[2].base_stat}</th>
-                  <th>{resultData.stats[3].base_stat}</th>
-                  <th>{resultData.stats[4].base_stat}</th>
-                  <th>{resultData.stats[5].base_stat}</th>
-                </tr>
+                <tbody>
+                  <tr className=" bg-gray-200">
+                    <th>체력</th>
+                    <th>공격</th>
+                    <th>방어</th>
+                    <th>특공</th>
+                    <th>특방</th>
+                    <th>스피드</th>
+                  </tr>
+                  <tr>
+                    <th>{resultData.stats[0].base_stat}</th>
+                    <th>{resultData.stats[1].base_stat}</th>
+                    <th>{resultData.stats[2].base_stat}</th>
+                    <th>{resultData.stats[3].base_stat}</th>
+                    <th>{resultData.stats[4].base_stat}</th>
+                    <th>{resultData.stats[5].base_stat}</th>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>

@@ -31,7 +31,7 @@ const Nav = ({ pokeResults, setSearchData }) => {
       <nav className=" flex justify-between items-center h-full">
         <div>
           <img
-            src="./pngwing.com.png"
+            src="/react-pokemon/pokelogo.png"
             alt="logo"
             className="w-36 cursor-pointer"
             onClick={onClickHome}
