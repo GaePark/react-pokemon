@@ -76,7 +76,10 @@ const DetailPage = () => {
   if (resultData) {
     return (
       <div>
-        <div className=" w-2/3 my-20 mx-auto flex flex-row justify-around bg-white">
+        <div
+          className=" border-4 border-gray-400 my-20 mx-auto flex flex-row justify-around bg-white"
+          style={{ maxWidth: "1200px", padding: "50px 0" }}
+        >
           <div>
             <img src={image} alt={resultData.koName} />
           </div>

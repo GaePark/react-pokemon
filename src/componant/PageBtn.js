@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { GrPrevious, GrNext } from "react-icons/gr";
 
-const PageBtn = ({ setPage, pokeResults }) => {
+const PageBtn = ({ setPage, pokeResults, page }) => {
   const test = Math.ceil(pokeResults.length / 20);
   const a = Math.floor(test / 10);
   const b = a * 10;
