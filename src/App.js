@@ -25,7 +25,7 @@ function App() {
     const fetchAllPokemon = () => {
       Array(1024)
         .fill(1)
-        .map(async (v, i) => {
+        .forEach(async (v, i) => {
           const resultData = await axios.get(
             `${requests.fetchPokemon}/${i + 1}`
           );
